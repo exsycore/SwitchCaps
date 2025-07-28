@@ -4,6 +4,9 @@ This program is made for those who want to use the Caps Lock key to change the l
 ## How to Use
 Click to open the program to start using it immediately. When you want to open the program, click to open it again. A window will pop up asking you.
 
+> [!NOTE]
+> Shift + Caps Lock to toggle caps lock
+
 ## Tool
 * Clang
 
