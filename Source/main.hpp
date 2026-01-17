@@ -4,6 +4,7 @@
 #include <Windows.h>
 
 #define WINDOW_NAME "SwitchCaps"
+#define WM_TRAYICON (WM_USER + 1)
 
 LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam);
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
@@ -15,6 +16,8 @@ struct SwitchCaps {
     void CreateDummyWindow(HINSTANCE hInstance);
     void DestroyDummyWindow(void);
     bool RegisterMainWindowClass(HINSTANCE hInstance);
+    void AddTrayIcon(HWND hwnd);
+    void RemoveTrayIcon(HWND hwnd);
 };
 
 #endif

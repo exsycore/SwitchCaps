@@ -8,7 +8,10 @@ set(CMAKE_CXX_COMPILER clang-cl)
 
 add_executable(${PROJECT_NAME} 
     Source/main.cpp
+    resource.h
     resource.rc
 )
+
+add_compile_definitions(UNICODE _UNICODE)
 
 target_link_options(${PROJECT_NAME} PRIVATE "/SUBSYSTEM:WINDOWS")
