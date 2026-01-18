@@ -4,20 +4,13 @@
 #include <Windows.h>
 
 #define WINDOW_NAME "SwitchCaps"
-#define WM_TRAYICON (WM_USER + 1)
+
+extern HHOOK g_hook;
+extern HWND g_hwnd;
+extern HWND g_test;
 
 LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam);
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int);
-
-struct SwitchCaps {
-    void SwitchLanguage(void);
-    void ToggleCapsLock(void);
-    void CreateDummyWindow(HINSTANCE hInstance);
-    void DestroyDummyWindow(void);
-    bool RegisterMainWindowClass(HINSTANCE hInstance);
-    void AddTrayIcon(HWND hwnd);
-    void RemoveTrayIcon(HWND hwnd);
-};
 
 #endif

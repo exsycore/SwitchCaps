@@ -8,6 +8,7 @@ set(CMAKE_CXX_COMPILER clang-cl)
 
 add_executable(${PROJECT_NAME} 
     Source/main.cpp
+    Source/switchcaps.cpp
     resource.h
     resource.rc
 )
