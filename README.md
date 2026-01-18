@@ -8,7 +8,8 @@ Click to open the program to start using it immediately. When you want to open t
 > Shift + Caps Lock to toggle caps lock
 
 ## Tool
-* Clang
+* Visual Studio 2026 & Visual Studio Code
+* CMAKE
 
 ## Clone
 ```bash
